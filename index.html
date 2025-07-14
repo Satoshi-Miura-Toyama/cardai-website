@@ -14,6 +14,9 @@
             margin: 0;
             padding: 20px;
         }
+     
+  </a>
+</div>
         h1, h2 {
             text-align: center;
         }
@@ -39,15 +42,13 @@
     </style>
 </head>
 <body>
-
-<div class="counter" id="counter">👁️ Visitors: Loading... / 訪問者数: Loading...</div>
-<script>
-    async function updateCounter() {
-        const response = await fetch('https://api.countapi.xyz/hit/satoshi-miura-toyama-cardai-website/visits');
-        const data = await response.json();
-        document.getElementById('counter').innerText =
-            "👁️ Visitors: " + data.value + " / 訪問者数: " + data.value + "人";
-    }
+   <!-- Visitor Counter (Hitwebcounter) -->
+<div style="text-align:center; margin-top:10px;">
+  <a href="https://www.hitwebcounter.com" target="_blank" title="Web Counter">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=12345678&style=0006&nbdigits=5&type=ip&initCount=0" 
+         title="Visitor Counter" 
+         Alt="Visitor Counter" 
+         border="0">
     window.onload = updateCounter;
 </script>
 <style>
